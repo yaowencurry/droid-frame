@@ -27,12 +27,21 @@ This is the preferred one-shot command because it verifies unit tests and produc
 - Debug APK:
   `app/build/outputs/apk/debug/app-debug.apk`
 - Release APK:
-  `app/build/outputs/apk/release/app-release-unsigned.apk`
+  `app/build/outputs/apk/release/app-release.apk`
+- Do not send or install `app-release-unsigned.apk`. Unsigned APKs are build intermediates and may show as an invalid install package.
 
 ## Release Signing
-- The current project has no release signing config.
-- `:app:assembleRelease` produces `app-release-unsigned.apk`.
-- If a signed installable/distributable release is needed, configure a release keystore first, then rebuild release.
+- The release build is intentionally signed with the local debug keystore so it can be installed directly for testing.
+- This is not a Play Store or production distribution signature.
+- If a production release is needed, configure a real release keystore and update this section before building.
+
+## Version And Install Rules
+- Every installable package change must increase `versionCode` in `app/build.gradle.kts`.
+- Update `versionName` to describe the build when bumping `versionCode`.
+- Android will reject installing an APK over an already installed app when the new `versionCode` is lower than the installed one.
+- Android will reject updating an installed app if the signing certificate changes. Current debug and release builds use the debug keystore to avoid signature mismatch during local testing.
+- If switching from an older package signed with a different key, uninstall the old app first or keep using the same signing key.
+- Before handing an APK to the user, confirm that the release output is `app-release.apk`, not `app-release-unsigned.apk`.
 
 ## Notes For Future Agents
 - Do not say the app is verified unless the command above has completed successfully in the current turn.
