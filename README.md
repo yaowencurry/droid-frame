@@ -1,4 +1,4 @@
-# Screenshot Framer
+# DroidFrame
 
 Native Android screenshot framing app implemented with Kotlin, Jetpack Compose, and an offline rendering pipeline.
 
@@ -32,6 +32,18 @@ On machines without Android SDK, the core test suite can still run:
 ```bash
 JAVA_HOME=/opt/homebrew/opt/openjdk@17 ./gradlew :core:test
 ```
+
+## Release APK
+
+APK files are published through GitHub Releases, not committed to the repository.
+To publish a downloadable APK, bump `versionCode` and `versionName`, commit the change, then push a version tag:
+
+```bash
+git tag v0.3.2
+git push origin v0.3.2
+```
+
+GitHub Actions will run tests, build `app/build/outputs/apk/release/app-release.apk`, and attach it to the release as `DroidFrame-v0.3.2.apk`.
 
 ## Asset strategy
 
