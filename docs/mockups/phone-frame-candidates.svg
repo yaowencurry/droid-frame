@@ -1,0 +1,232 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="2400" viewBox="0 0 1800 2400">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f7f7ee"/>
+      <stop offset="1" stop-color="#edf0e4"/>
+    </linearGradient>
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="24" stdDeviation="22" flood-color="#1c241f" flood-opacity="0.22"/>
+    </filter>
+    <filter id="smallShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="#111" flood-opacity="0.18"/>
+    </filter>
+    <linearGradient id="metalLight" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#82928a"/>
+      <stop offset="0.12" stop-color="#eff3ea"/>
+      <stop offset="0.5" stop-color="#b8c2ba"/>
+      <stop offset="0.88" stop-color="#f7faf2"/>
+      <stop offset="1" stop-color="#6f7c75"/>
+    </linearGradient>
+    <linearGradient id="metalDark" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#020304"/>
+      <stop offset="0.16" stop-color="#4a4f50"/>
+      <stop offset="0.52" stop-color="#111315"/>
+      <stop offset="0.84" stop-color="#687071"/>
+      <stop offset="1" stop-color="#030405"/>
+    </linearGradient>
+    <linearGradient id="titanium" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#5f625f"/>
+      <stop offset="0.18" stop-color="#dad6cb"/>
+      <stop offset="0.5" stop-color="#8e8b82"/>
+      <stop offset="0.86" stop-color="#eee7d8"/>
+      <stop offset="1" stop-color="#565953"/>
+    </linearGradient>
+    <linearGradient id="greenMetal" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#203f37"/>
+      <stop offset="0.18" stop-color="#c8d8cc"/>
+      <stop offset="0.5" stop-color="#658577"/>
+      <stop offset="0.86" stop-color="#e6efe4"/>
+      <stop offset="1" stop-color="#1d382f"/>
+    </linearGradient>
+    <style>
+      .title{font:700 52px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#17201c}
+      .sub{font:400 28px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#667069}
+      .label{font:700 36px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#17201c}
+      .note{font:400 24px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#667069}
+      .uiTitle{font:700 28px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#14201a}
+      .uiSmall{font:400 18px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#657068}
+    </style>
+  </defs>
+  <rect width="1800" height="2400" fill="url(#bg)"/>
+  <text x="90" y="105" class="title">手机壳候选风格</text>
+  <text x="90" y="155" class="sub">选 2-4 个编号，我再接入 App。默认目标：图二风格，窄边框、打孔屏、浅色背景。</text>
+
+  <g id="candidate">
+    <rect id="card" x="0" y="0" width="300" height="420" rx="28" fill="#ffffff" opacity="0.76"/>
+  </g>
+
+  <g transform="translate(90 230)">
+    <use href="#card"/>
+    <text x="24" y="56" class="label">A</text>
+    <text x="74" y="50" class="uiTitle">Pixel Porcelain</text>
+    <text x="74" y="82" class="note">最接近图二</text>
+    <g transform="translate(70 115) scale(.38)" filter="url(#softShadow)">
+      <rect x="0" y="0" width="420" height="720" rx="78" fill="url(#metalLight)"/>
+      <rect x="12" y="10" width="396" height="700" rx="68" fill="#0b0d0e"/>
+      <rect x="28" y="30" width="364" height="660" rx="54" fill="#f8f8f0"/>
+      <circle cx="210" cy="61" r="18" fill="#08090a"/>
+      <circle cx="210" cy="61" r="8" fill="#14202b"/>
+      <rect x="156" y="18" width="108" height="8" rx="4" fill="#1b1d1d"/>
+      <rect x="401" y="240" width="10" height="78" rx="5" fill="#66736c"/>
+      <rect x="401" y="344" width="10" height="92" rx="5" fill="#66736c"/>
+    </g>
+  </g>
+
+  <g transform="translate(430 230)">
+    <use href="#card"/>
+    <text x="24" y="56" class="label">B</text>
+    <text x="74" y="50" class="uiTitle">Pixel Obsidian</text>
+    <text x="74" y="82" class="note">黑色旗舰感</text>
+    <g transform="translate(70 115) scale(.38)" filter="url(#softShadow)">
+      <rect x="0" y="0" width="420" height="720" rx="78" fill="url(#metalDark)"/>
+      <rect x="13" y="11" width="394" height="698" rx="67" fill="#040506"/>
+      <rect x="29" y="31" width="362" height="658" rx="53" fill="#f8f8f0"/>
+      <circle cx="210" cy="61" r="18" fill="#08090a"/>
+      <rect x="154" y="17" width="112" height="8" rx="4" fill="#242829"/>
+      <rect x="401" y="240" width="10" height="82" rx="5" fill="#272d2e"/>
+    </g>
+  </g>
+
+  <g transform="translate(770 230)">
+    <use href="#card"/>
+    <text x="24" y="56" class="label">C</text>
+    <text x="74" y="50" class="uiTitle">Galaxy Titanium</text>
+    <text x="74" y="82" class="note">硬朗钛金属</text>
+    <g transform="translate(70 115) scale(.38)" filter="url(#softShadow)">
+      <rect x="0" y="0" width="420" height="720" rx="48" fill="url(#titanium)"/>
+      <rect x="12" y="10" width="396" height="700" rx="40" fill="#0b0b0c"/>
+      <rect x="26" y="26" width="368" height="668" rx="30" fill="#f9f8ef"/>
+      <circle cx="210" cy="60" r="17" fill="#050607"/>
+      <rect x="402" y="230" width="10" height="90" rx="5" fill="#77746c"/>
+      <rect x="-2" y="220" width="8" height="72" rx="4" fill="#6a6962"/>
+    </g>
+  </g>
+
+  <g transform="translate(1110 230)">
+    <use href="#card"/>
+    <text x="24" y="56" class="label">D</text>
+    <text x="74" y="50" class="uiTitle">Galaxy Fold</text>
+    <text x="74" y="82" class="note">折叠屏宽屏</text>
+    <g transform="translate(48 145) scale(.36)" filter="url(#softShadow)">
+      <rect x="0" y="0" width="520" height="600" rx="42" fill="url(#titanium)"/>
+      <rect x="13" y="12" width="494" height="576" rx="34" fill="#0b0b0c"/>
+      <rect x="30" y="30" width="460" height="540" rx="24" fill="#f9f8ef"/>
+      <circle cx="260" cy="58" r="16" fill="#050607"/>
+      <rect x="505" y="210" width="10" height="110" rx="5" fill="#77746c"/>
+    </g>
+  </g>
+
+  <g transform="translate(1450 230)">
+    <use href="#card"/>
+    <text x="24" y="56" class="label">E</text>
+    <text x="74" y="50" class="uiTitle">Xiaomi Silver</text>
+    <text x="74" y="82" class="note">圆润银边</text>
+    <g transform="translate(70 115) scale(.38)" filter="url(#softShadow)">
+      <rect x="0" y="0" width="420" height="720" rx="68" fill="url(#metalLight)"/>
+      <rect x="11" y="10" width="398" height="700" rx="60" fill="#0c0d0d"/>
+      <rect x="25" y="28" width="370" height="664" rx="46" fill="#f8f8f0"/>
+      <circle cx="210" cy="60" r="17" fill="#050607"/>
+      <path d="M110 6 C150 18 270 18 310 6" fill="none" stroke="#636b66" stroke-width="7" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <g transform="translate(90 770)">
+    <use href="#card"/>
+    <text x="24" y="56" class="label">F</text>
+    <text x="74" y="50" class="uiTitle">OnePlus Emerald</text>
+    <text x="74" y="82" class="note">绿色金属边</text>
+    <g transform="translate(70 115) scale(.38)" filter="url(#softShadow)">
+      <rect x="0" y="0" width="420" height="720" rx="70" fill="url(#greenMetal)"/>
+      <rect x="12" y="10" width="396" height="700" rx="61" fill="#0a0d0b"/>
+      <rect x="27" y="29" width="366" height="662" rx="47" fill="#f8f8f0"/>
+      <circle cx="210" cy="62" r="17" fill="#050607"/>
+      <rect x="400" y="250" width="10" height="78" rx="5" fill="#28453c"/>
+    </g>
+  </g>
+
+  <g transform="translate(430 770)">
+    <use href="#card"/>
+    <text x="24" y="56" class="label">G</text>
+    <text x="74" y="50" class="uiTitle">OPPO/Vivo Pearl</text>
+    <text x="74" y="82" class="note">推荐默认</text>
+    <g transform="translate(70 115) scale(.38)" filter="url(#softShadow)">
+      <rect x="0" y="0" width="420" height="720" rx="76" fill="#9faea6"/>
+      <rect x="5" y="3" width="410" height="714" rx="74" fill="none" stroke="#f7fbf5" stroke-width="8"/>
+      <rect x="12" y="10" width="396" height="700" rx="66" fill="#090b0a"/>
+      <rect x="27" y="28" width="366" height="664" rx="52" fill="#f8f8f0"/>
+      <circle cx="210" cy="60" r="18" fill="#060708"/>
+      <rect x="401" y="244" width="10" height="82" rx="5" fill="#829289"/>
+      <rect x="401" y="350" width="10" height="92" rx="5" fill="#829289"/>
+    </g>
+  </g>
+
+  <g transform="translate(770 770)">
+    <use href="#card"/>
+    <text x="24" y="56" class="label">H</text>
+    <text x="74" y="50" class="uiTitle">Honor Magic</text>
+    <text x="74" y="82" class="note">青绿色轻旗舰</text>
+    <g transform="translate(70 115) scale(.38)" filter="url(#softShadow)">
+      <rect x="0" y="0" width="420" height="720" rx="72" fill="url(#greenMetal)"/>
+      <rect x="13" y="11" width="394" height="698" rx="61" fill="#0a0d0c"/>
+      <rect x="30" y="30" width="360" height="660" rx="48" fill="#f8f8f0"/>
+      <circle cx="210" cy="62" r="16" fill="#050607"/>
+      <circle cx="210" cy="62" r="7" fill="#1b2b32"/>
+    </g>
+  </g>
+
+  <g transform="translate(1110 770)">
+    <use href="#card"/>
+    <text x="24" y="56" class="label">I</text>
+    <text x="74" y="50" class="uiTitle">Huawei Mate</text>
+    <text x="74" y="82" class="note">商务青绿</text>
+    <g transform="translate(70 115) scale(.38)" filter="url(#softShadow)">
+      <rect x="0" y="0" width="420" height="720" rx="64" fill="#45685b"/>
+      <rect x="5" y="4" width="410" height="712" rx="60" fill="none" stroke="#cbd8cf" stroke-width="7"/>
+      <rect x="13" y="12" width="394" height="696" rx="54" fill="#0a0d0c"/>
+      <rect x="30" y="32" width="360" height="656" rx="42" fill="#f8f8f0"/>
+      <circle cx="191" cy="62" r="14" fill="#050607"/>
+      <circle cx="229" cy="62" r="14" fill="#050607"/>
+    </g>
+  </g>
+
+  <g transform="translate(1450 770)">
+    <use href="#card"/>
+    <text x="24" y="56" class="label">J</text>
+    <text x="74" y="50" class="uiTitle">Premium Dark</text>
+    <text x="74" y="82" class="note">通用黑边</text>
+    <g transform="translate(70 115) scale(.38)" filter="url(#softShadow)">
+      <rect x="0" y="0" width="420" height="720" rx="76" fill="#08090a"/>
+      <rect x="5" y="4" width="410" height="712" rx="72" fill="none" stroke="#5f6667" stroke-width="7"/>
+      <rect x="15" y="14" width="390" height="692" rx="62" fill="#030405"/>
+      <rect x="31" y="34" width="358" height="652" rx="46" fill="#f8f8f0"/>
+      <circle cx="210" cy="62" r="17" fill="#050607"/>
+    </g>
+  </g>
+
+  <rect x="90" y="1345" width="1620" height="760" rx="34" fill="#ffffff" opacity=".72"/>
+  <text x="140" y="1425" class="title">默认导出预览方向</text>
+  <text x="140" y="1480" class="sub">3:4 画布 · 浅米绿色背景 · 窄边框打孔屏 · 柔和阴影</text>
+  <g transform="translate(580 1510)" filter="url(#softShadow)">
+    <rect x="0" y="0" width="450" height="770" rx="84" fill="#9faea6"/>
+    <rect x="5" y="4" width="440" height="762" rx="80" fill="none" stroke="#f7fbf5" stroke-width="8"/>
+    <rect x="14" y="12" width="422" height="746" rx="72" fill="#0a0b0a"/>
+    <rect x="31" y="34" width="388" height="702" rx="58" fill="#f8f8f0"/>
+    <circle cx="225" cy="68" r="19" fill="#060708"/>
+    <circle cx="225" cy="68" r="8" fill="#15242d"/>
+    <rect x="428" y="258" width="11" height="86" rx="5.5" fill="#829289"/>
+    <rect x="428" y="368" width="11" height="96" rx="5.5" fill="#829289"/>
+    <text x="62" y="112" class="uiSmall">20:00</text>
+    <text x="62" y="172" class="uiSmall" fill="#128551">LIBRARY</text>
+    <text x="62" y="220" class="uiTitle">书籍</text>
+    <rect x="62" y="300" width="326" height="78" rx="18" fill="#fff"/>
+    <rect x="62" y="400" width="326" height="78" rx="18" fill="#fff"/>
+    <rect x="62" y="500" width="326" height="78" rx="18" fill="#fff"/>
+    <rect x="326" y="575" width="58" height="58" rx="18" fill="#22b873"/>
+    <rect x="31" y="650" width="388" height="86" rx="0" fill="#edf8ef"/>
+  </g>
+  <text x="1070" y="1640" class="label">建议默认</text>
+  <text x="1070" y="1695" class="sub">A 或 G</text>
+  <text x="1070" y="1750" class="note">A 更 Pixel，G 更接近你给的图二。</text>
+  <text x="1070" y="1810" class="note">确认后我会把它们接入导出器，</text>
+  <text x="1070" y="1850" class="note">并增加比例和背景色控制。</text>
+</svg>

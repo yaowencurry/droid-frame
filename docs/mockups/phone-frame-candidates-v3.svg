@@ -1,0 +1,158 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="2400" viewBox="0 0 1800 2400">
+  <defs>
+    <linearGradient id="pageBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fbfbf3"/>
+      <stop offset="1" stop-color="#edf2e7"/>
+    </linearGradient>
+    <linearGradient id="screenBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fbfbf5"/>
+      <stop offset="1" stop-color="#eef7ee"/>
+    </linearGradient>
+    <linearGradient id="oppoMetal" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#66766e"/>
+      <stop offset="0.07" stop-color="#ffffff"/>
+      <stop offset="0.20" stop-color="#b8c8bd"/>
+      <stop offset="0.50" stop-color="#7c9086"/>
+      <stop offset="0.82" stop-color="#f5fff3"/>
+      <stop offset="1" stop-color="#5e6f67"/>
+    </linearGradient>
+    <linearGradient id="xiaomiMetal" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#6d7575"/>
+      <stop offset="0.10" stop-color="#ffffff"/>
+      <stop offset="0.48" stop-color="#abb2af"/>
+      <stop offset="0.90" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#68706f"/>
+    </linearGradient>
+    <linearGradient id="blackTitanium" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#060708"/>
+      <stop offset="0.13" stop-color="#6c7372"/>
+      <stop offset="0.48" stop-color="#161a1a"/>
+      <stop offset="0.86" stop-color="#828988"/>
+      <stop offset="1" stop-color="#060708"/>
+    </linearGradient>
+    <linearGradient id="glassMetal" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#9ca6a0"/>
+      <stop offset="0.16" stop-color="#ffffff"/>
+      <stop offset="0.52" stop-color="#dfe7de"/>
+      <stop offset="0.82" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#89958e"/>
+    </linearGradient>
+    <filter id="phoneShadow" x="-30%" y="-20%" width="160%" height="150%">
+      <feDropShadow dx="0" dy="22" stdDeviation="22" flood-color="#17221a" flood-opacity="0.20"/>
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#17221a" flood-opacity="0.12"/>
+    </filter>
+    <filter id="cardShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="16" flood-color="#293228" flood-opacity="0.08"/>
+    </filter>
+    <style>
+      .title{font:800 54px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#16231c}
+      .sub{font:400 27px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#667269}
+      .tag{font:800 32px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#17231d}
+      .name{font:700 25px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#344039}
+      .screenTiny{font:500 16px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#6f7a72}
+      .screenTitle{font:800 26px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#17231d}
+    </style>
+  </defs>
+
+  <rect width="1800" height="2400" fill="url(#pageBg)"/>
+  <text x="110" y="110" class="title">精致带壳截图候选 V3</text>
+  <text x="110" y="158" class="sub">按图二方向：极窄金属边、打孔屏、浅背景、大比例居中、柔和阴影。</text>
+
+  <g transform="translate(100 230)">
+    <rect x="0" y="0" width="760" height="930" rx="44" fill="#f9faf1" filter="url(#cardShadow)"/>
+    <text x="48" y="70" class="tag">A</text>
+    <text x="98" y="70" class="name">OPPO Find 极窄银绿边</text>
+    <g transform="translate(216 120)">
+      <rect x="0" y="0" width="330" height="690" rx="62" fill="url(#oppoMetal)" filter="url(#phoneShadow)"/>
+      <rect x="4" y="4" width="322" height="682" rx="58" fill="none" stroke="#ffffff" stroke-opacity="0.62" stroke-width="4"/>
+      <rect x="9" y="9" width="312" height="672" rx="54" fill="#050706"/>
+      <rect x="17" y="20" width="296" height="650" rx="47" fill="url(#screenBg)"/>
+      <circle cx="165" cy="45" r="12" fill="#060808"/>
+      <circle cx="165" cy="45" r="4.5" fill="#253941"/>
+      <rect x="321" y="235" width="6" height="72" rx="3" fill="#708177"/>
+      <rect x="3" y="184" width="5" height="92" rx="2.5" fill="#7b8d84"/>
+      <rect x="45" y="94" width="240" height="92" rx="26" fill="#ffffff" opacity="0.90"/>
+      <rect x="45" y="212" width="240" height="74" rx="23" fill="#ffffff" opacity="0.90"/>
+      <rect x="45" y="310" width="240" height="74" rx="23" fill="#ffffff" opacity="0.90"/>
+      <rect x="45" y="408" width="240" height="74" rx="23" fill="#ffffff" opacity="0.90"/>
+      <circle cx="262" cy="592" r="28" fill="#28b66e"/>
+      <text x="62" y="76" class="screenTiny">20:00</text>
+      <text x="62" y="145" class="screenTitle">书籍</text>
+      <path d="M30 648 C90 672 240 672 300 648" stroke="#000000" stroke-opacity="0.18" stroke-width="6" fill="none" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <g transform="translate(940 230)">
+    <rect x="0" y="0" width="760" height="930" rx="44" fill="#f9faf1" filter="url(#cardShadow)"/>
+    <text x="48" y="70" class="tag">B</text>
+    <text x="98" y="70" class="name">Xiaomi HyperOS 浅银边</text>
+    <g transform="translate(216 120)">
+      <rect x="0" y="0" width="330" height="690" rx="58" fill="url(#xiaomiMetal)" filter="url(#phoneShadow)"/>
+      <rect x="5" y="5" width="320" height="680" rx="54" fill="none" stroke="#ffffff" stroke-opacity="0.72" stroke-width="4"/>
+      <rect x="10" y="10" width="310" height="670" rx="50" fill="#050606"/>
+      <rect x="18" y="20" width="294" height="650" rx="43" fill="url(#screenBg)"/>
+      <circle cx="165" cy="43" r="11" fill="#050606"/>
+      <circle cx="165" cy="43" r="4.2" fill="#23323a"/>
+      <rect x="322" y="220" width="6" height="78" rx="3" fill="#a4aca8"/>
+      <rect x="3" y="170" width="5" height="94" rx="2.5" fill="#a4aca8"/>
+      <rect x="44" y="96" width="242" height="88" rx="25" fill="#ffffff" opacity="0.90"/>
+      <rect x="44" y="214" width="242" height="72" rx="22" fill="#ffffff" opacity="0.90"/>
+      <rect x="44" y="310" width="242" height="72" rx="22" fill="#ffffff" opacity="0.90"/>
+      <rect x="44" y="406" width="242" height="72" rx="22" fill="#ffffff" opacity="0.90"/>
+      <circle cx="260" cy="592" r="28" fill="#21b56b"/>
+      <text x="62" y="76" class="screenTiny">20:00</text>
+      <text x="62" y="145" class="screenTitle">书籍</text>
+      <path d="M30 648 C90 672 240 672 300 648" stroke="#000000" stroke-opacity="0.16" stroke-width="6" fill="none" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <g transform="translate(100 1260)">
+    <rect x="0" y="0" width="760" height="930" rx="44" fill="#f9faf1" filter="url(#cardShadow)"/>
+    <text x="48" y="70" class="tag">C</text>
+    <text x="98" y="70" class="name">OPPO / OnePlus 黑钛细边</text>
+    <g transform="translate(216 120)">
+      <rect x="0" y="0" width="330" height="690" rx="60" fill="url(#blackTitanium)" filter="url(#phoneShadow)"/>
+      <rect x="5" y="5" width="320" height="680" rx="56" fill="none" stroke="#d6ded9" stroke-opacity="0.30" stroke-width="4"/>
+      <rect x="10" y="10" width="310" height="670" rx="51" fill="#030404"/>
+      <rect x="18" y="20" width="294" height="650" rx="44" fill="url(#screenBg)"/>
+      <circle cx="165" cy="43" r="11" fill="#030404"/>
+      <circle cx="165" cy="43" r="4.2" fill="#1f3037"/>
+      <rect x="322" y="220" width="6" height="78" rx="3" fill="#525b5b"/>
+      <rect x="3" y="170" width="5" height="94" rx="2.5" fill="#525b5b"/>
+      <rect x="44" y="96" width="242" height="88" rx="25" fill="#ffffff" opacity="0.90"/>
+      <rect x="44" y="214" width="242" height="72" rx="22" fill="#ffffff" opacity="0.90"/>
+      <rect x="44" y="310" width="242" height="72" rx="22" fill="#ffffff" opacity="0.90"/>
+      <rect x="44" y="406" width="242" height="72" rx="22" fill="#ffffff" opacity="0.90"/>
+      <circle cx="260" cy="592" r="28" fill="#21b56b"/>
+      <text x="62" y="76" class="screenTiny">20:00</text>
+      <text x="62" y="145" class="screenTitle">书籍</text>
+      <path d="M30 648 C90 672 240 672 300 648" stroke="#000000" stroke-opacity="0.18" stroke-width="6" fill="none" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <g transform="translate(940 1260)">
+    <rect x="0" y="0" width="760" height="930" rx="44" fill="#f9faf1" filter="url(#cardShadow)"/>
+    <text x="48" y="70" class="tag">D</text>
+    <text x="98" y="70" class="name">通用透明玻璃细边</text>
+    <g transform="translate(216 120)">
+      <rect x="0" y="0" width="330" height="690" rx="62" fill="url(#glassMetal)" filter="url(#phoneShadow)" opacity="0.88"/>
+      <rect x="4" y="4" width="322" height="682" rx="58" fill="none" stroke="#ffffff" stroke-opacity="0.84" stroke-width="4"/>
+      <rect x="9" y="9" width="312" height="672" rx="54" fill="#0a0c0b" opacity="0.90"/>
+      <rect x="17" y="20" width="296" height="650" rx="47" fill="url(#screenBg)"/>
+      <circle cx="165" cy="45" r="12" fill="#060808"/>
+      <circle cx="165" cy="45" r="4.5" fill="#253941"/>
+      <rect x="321" y="235" width="6" height="72" rx="3" fill="#9fa99f"/>
+      <rect x="3" y="184" width="5" height="92" rx="2.5" fill="#9fa99f"/>
+      <rect x="45" y="94" width="240" height="92" rx="26" fill="#ffffff" opacity="0.90"/>
+      <rect x="45" y="212" width="240" height="74" rx="23" fill="#ffffff" opacity="0.90"/>
+      <rect x="45" y="310" width="240" height="74" rx="23" fill="#ffffff" opacity="0.90"/>
+      <rect x="45" y="408" width="240" height="74" rx="23" fill="#ffffff" opacity="0.90"/>
+      <circle cx="262" cy="592" r="28" fill="#28b66e"/>
+      <text x="62" y="76" class="screenTiny">20:00</text>
+      <text x="62" y="145" class="screenTitle">书籍</text>
+      <path d="M30 648 C90 672 240 672 300 648" stroke="#000000" stroke-opacity="0.14" stroke-width="6" fill="none" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <text x="110" y="2300" class="sub">建议默认：A，3:4 画布，背景 #F3F5EA。B 作为小米风格，D 作为无品牌 fallback。</text>
+</svg>

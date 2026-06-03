@@ -1,0 +1,173 @@
+{
+  "version": 1,
+  "devices": [
+    {
+      "id": "pixel-9-pro",
+      "brand": "Google",
+      "name": "Pixel 9 Pro",
+      "screen": { "width": 1344, "height": 2992 },
+      "frame": { "width": 1512, "height": 3220 },
+      "safeArea": { "left": 92, "top": 116, "width": 1344, "height": 2992 },
+      "colors": [
+        { "id": "obsidian", "name": "曜石黑", "asset": "pixel_9_pro_obsidian.png" },
+        { "id": "porcelain", "name": "陶瓷白", "asset": "pixel_9_pro_porcelain.png" }
+      ]
+    },
+    {
+      "id": "pixel-8-pro",
+      "brand": "Google",
+      "name": "Pixel 8 Pro",
+      "screen": { "width": 1344, "height": 2992 },
+      "frame": { "width": 1516, "height": 3224 },
+      "safeArea": { "left": 86, "top": 116, "width": 1344, "height": 2992 },
+      "colors": [
+        { "id": "obsidian", "name": "曜石黑", "asset": "pixel_8_pro_obsidian.png" },
+        { "id": "bay", "name": "海湾蓝", "asset": "pixel_8_pro_bay.png" }
+      ]
+    },
+    {
+      "id": "galaxy-s24-ultra",
+      "brand": "Samsung",
+      "name": "Galaxy S24 Ultra",
+      "screen": { "width": 1440, "height": 3120 },
+      "frame": { "width": 1628, "height": 3350 },
+      "safeArea": { "left": 94, "top": 112, "width": 1440, "height": 3120 },
+      "colors": [
+        { "id": "titanium-black", "name": "钛黑", "asset": "galaxy_s24_ultra_black.png" },
+        { "id": "titanium-gray", "name": "钛灰", "asset": "galaxy_s24_ultra_gray.png" }
+      ]
+    },
+    {
+      "id": "galaxy-z-fold6",
+      "brand": "Samsung",
+      "name": "Galaxy Z Fold6",
+      "screen": { "width": 1856, "height": 2160 },
+      "frame": { "width": 2060, "height": 2380 },
+      "safeArea": { "left": 102, "top": 110, "width": 1856, "height": 2160 },
+      "colors": [
+        { "id": "navy", "name": "海军蓝", "asset": "galaxy_z_fold6_navy.png" },
+        { "id": "silver", "name": "银色", "asset": "galaxy_z_fold6_silver.png" }
+      ]
+    },
+    {
+      "id": "xiaomi-14-ultra",
+      "brand": "Xiaomi",
+      "name": "Xiaomi 14 Ultra",
+      "screen": { "width": 1440, "height": 3200 },
+      "frame": { "width": 1602, "height": 3426 },
+      "safeArea": { "left": 81, "top": 113, "width": 1440, "height": 3200 },
+      "colors": [
+        { "id": "black", "name": "黑色", "asset": "xiaomi_14_ultra_black.png" },
+        { "id": "white", "name": "白色", "asset": "xiaomi_14_ultra_white.png" }
+      ]
+    },
+    {
+      "id": "xiaomi-15-pro",
+      "brand": "Xiaomi",
+      "name": "Xiaomi 15 Pro",
+      "screen": { "width": 1440, "height": 3200 },
+      "frame": { "width": 1600, "height": 3418 },
+      "safeArea": { "left": 80, "top": 109, "width": 1440, "height": 3200 },
+      "colors": [
+        { "id": "black", "name": "黑色", "asset": "xiaomi_15_pro_black.png" },
+        { "id": "silver", "name": "银色", "asset": "xiaomi_15_pro_silver.png" }
+      ]
+    },
+    {
+      "id": "oneplus-12",
+      "brand": "OnePlus",
+      "name": "OnePlus 12",
+      "screen": { "width": 1440, "height": 3168 },
+      "frame": { "width": 1608, "height": 3390 },
+      "safeArea": { "left": 84, "top": 111, "width": 1440, "height": 3168 },
+      "colors": [
+        { "id": "silky-black", "name": "丝绸黑", "asset": "oneplus_12_black.png" },
+        { "id": "flowy-emerald", "name": "留白绿", "asset": "oneplus_12_emerald.png" }
+      ]
+    },
+    {
+      "id": "oneplus-13",
+      "brand": "OnePlus",
+      "name": "OnePlus 13",
+      "screen": { "width": 1440, "height": 3168 },
+      "frame": { "width": 1608, "height": 3386 },
+      "safeArea": { "left": 84, "top": 109, "width": 1440, "height": 3168 },
+      "colors": [
+        { "id": "black", "name": "黑色", "asset": "oneplus_13_black.png" },
+        { "id": "white", "name": "白色", "asset": "oneplus_13_white.png" }
+      ]
+    },
+    {
+      "id": "vivo-x100-pro",
+      "brand": "vivo",
+      "name": "vivo X100 Pro",
+      "screen": { "width": 1260, "height": 2800 },
+      "frame": { "width": 1428, "height": 3024 },
+      "safeArea": { "left": 84, "top": 112, "width": 1260, "height": 2800 },
+      "colors": [
+        { "id": "asteroid-black", "name": "星迹黑", "asset": "vivo_x100_pro_black.png" },
+        { "id": "startrail-blue", "name": "星迹蓝", "asset": "vivo_x100_pro_blue.png" }
+      ]
+    },
+    {
+      "id": "vivo-x200-pro",
+      "brand": "vivo",
+      "name": "vivo X200 Pro",
+      "screen": { "width": 1260, "height": 2800 },
+      "frame": { "width": 1428, "height": 3020 },
+      "safeArea": { "left": 84, "top": 110, "width": 1260, "height": 2800 },
+      "colors": [
+        { "id": "black", "name": "钛黑", "asset": "vivo_x200_pro_black.png" },
+        { "id": "blue", "name": "宝石蓝", "asset": "vivo_x200_pro_blue.png" }
+      ]
+    },
+    {
+      "id": "oppo-find-x7-ultra",
+      "brand": "OPPO",
+      "name": "OPPO Find X7 Ultra",
+      "screen": { "width": 1440, "height": 3168 },
+      "frame": { "width": 1610, "height": 3394 },
+      "safeArea": { "left": 85, "top": 113, "width": 1440, "height": 3168 },
+      "colors": [
+        { "id": "ocean-blue", "name": "海阔天空", "asset": "oppo_find_x7_ultra_blue.png" },
+        { "id": "sepia-brown", "name": "大漠银月", "asset": "oppo_find_x7_ultra_brown.png" }
+      ]
+    },
+    {
+      "id": "oppo-find-x8-pro",
+      "brand": "OPPO",
+      "name": "OPPO Find X8 Pro",
+      "screen": { "width": 1264, "height": 2780 },
+      "frame": { "width": 1428, "height": 3002 },
+      "safeArea": { "left": 82, "top": 111, "width": 1264, "height": 2780 },
+      "colors": [
+        { "id": "black", "name": "雅黑", "asset": "oppo_find_x8_pro_black.png" },
+        { "id": "white", "name": "浮光白", "asset": "oppo_find_x8_pro_white.png" }
+      ]
+    },
+    {
+      "id": "honor-magic6-pro",
+      "brand": "HONOR",
+      "name": "荣耀 Magic6 Pro",
+      "screen": { "width": 1280, "height": 2800 },
+      "frame": { "width": 1444, "height": 3020 },
+      "safeArea": { "left": 82, "top": 110, "width": 1280, "height": 2800 },
+      "colors": [
+        { "id": "black", "name": "绒黑", "asset": "honor_magic6_pro_black.png" },
+        { "id": "green", "name": "祁连雪", "asset": "honor_magic6_pro_green.png" }
+      ]
+    },
+    {
+      "id": "huawei-mate-60-pro",
+      "brand": "HUAWEI",
+      "name": "HUAWEI Mate 60 Pro",
+      "screen": { "width": 1260, "height": 2720 },
+      "frame": { "width": 1424, "height": 2940 },
+      "safeArea": { "left": 82, "top": 110, "width": 1260, "height": 2720 },
+      "colors": [
+        { "id": "black", "name": "雅川青", "asset": "huawei_mate_60_pro_green.png" },
+        { "id": "purple", "name": "南糯紫", "asset": "huawei_mate_60_pro_purple.png" }
+      ]
+    }
+  ]
+}

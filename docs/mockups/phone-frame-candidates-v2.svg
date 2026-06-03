@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="2400" viewBox="0 0 1800 2400">
+  <defs>
+    <linearGradient id="pageBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f8f8ef"/>
+      <stop offset="1" stop-color="#eef1e7"/>
+    </linearGradient>
+    <filter id="soft" x="-25%" y="-25%" width="150%" height="155%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#17211b" flood-opacity=".18"/>
+    </filter>
+    <filter id="tiny" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#101713" flood-opacity=".16"/>
+    </filter>
+    <linearGradient id="silverGreen" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#6f8078"/>
+      <stop offset=".08" stop-color="#f8fbf4"/>
+      <stop offset=".22" stop-color="#b9c5bd"/>
+      <stop offset=".50" stop-color="#7f9288"/>
+      <stop offset=".78" stop-color="#eef4ec"/>
+      <stop offset="1" stop-color="#5f7068"/>
+    </linearGradient>
+    <linearGradient id="xiaomiSilver" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#747b7b"/>
+      <stop offset=".12" stop-color="#fbfaf5"/>
+      <stop offset=".5" stop-color="#aeb5b2"/>
+      <stop offset=".88" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#6b7371"/>
+    </linearGradient>
+    <linearGradient id="cyanMetal" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#5d7774"/>
+      <stop offset=".10" stop-color="#edf7ef"/>
+      <stop offset=".50" stop-color="#98aaa3"/>
+      <stop offset=".9" stop-color="#f8fff8"/>
+      <stop offset="1" stop-color="#516862"/>
+    </linearGradient>
+    <linearGradient id="darkMetal" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#080a0b"/>
+      <stop offset=".14" stop-color="#545d5f"/>
+      <stop offset=".52" stop-color="#171b1d"/>
+      <stop offset=".86" stop-color="#6c7475"/>
+      <stop offset="1" stop-color="#060708"/>
+    </linearGradient>
+    <style>
+      .title{font:800 54px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#16221c}
+      .sub{font:400 28px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#647068}
+      .label{font:800 38px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#16221c}
+      .name{font:700 29px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#18221d}
+      .note{font:400 22px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#68756d}
+      .screenTitle{font:800 24px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#18231e}
+      .screenSub{font:400 16px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#6d756f}
+    </style>
+    <g id="sampleUi">
+      <rect x="0" y="0" width="330" height="690" rx="42" fill="#fbfbf4"/>
+      <text x="24" y="58" class="screenSub" fill="#111">20:00</text>
+      <text x="24" y="106" class="screenSub" fill="#128551">LIBRARY</text>
+      <text x="24" y="146" class="screenTitle">书籍</text>
+      <text x="24" y="180" class="screenSub">一页一页，搭起你的私人书架。</text>
+      <text x="24" y="236" class="screenTitle" font-size="19">我的书架</text>
+      <text x="280" y="236" class="screenSub">7 本</text>
+      <rect x="24" y="260" width="282" height="70" rx="16" fill="#fff"/>
+      <rect x="24" y="350" width="282" height="70" rx="16" fill="#fff"/>
+      <rect x="24" y="440" width="282" height="70" rx="16" fill="#fff"/>
+      <rect x="24" y="530" width="282" height="70" rx="16" fill="#fff"/>
+      <rect x="248" y="574" width="52" height="52" rx="16" fill="#23b66e"/>
+      <text x="268" y="609" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="30" fill="#fff">+</text>
+      <rect x="0" y="620" width="330" height="70" fill="#edf8ef"/>
+    </g>
+    <g id="ultraThinPhone">
+      <rect x="0" y="0" width="382" height="760" rx="70" fill="var(--metal)" filter="url(#soft)"/>
+      <rect x="3.5" y="3.5" width="375" height="753" rx="67" fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="5"/>
+      <rect x="8" y="7" width="366" height="746" rx="64" fill="#070908"/>
+      <rect x="20" y="22" width="342" height="716" rx="54" fill="#fbfbf4"/>
+      <g transform="translate(26 34)">
+        <use href="#sampleUi"/>
+      </g>
+      <circle cx="191" cy="48" r="15" fill="#060708"/>
+      <circle cx="191" cy="48" r="6" fill="#13232c"/>
+      <rect x="137" y="10" width="108" height="5" rx="2.5" fill="#1a1e1e" opacity=".85"/>
+      <rect x="372" y="244" width="7" height="78" rx="3.5" fill="#6b7a72"/>
+      <rect x="372" y="346" width="7" height="90" rx="3.5" fill="#6b7a72"/>
+      <path d="M30 716 C94 748 285 748 352 716" stroke="#000" stroke-opacity=".28" stroke-width="9" fill="none" stroke-linecap="round"/>
+    </g>
+  </defs>
+
+  <rect width="1800" height="2400" fill="url(#pageBg)"/>
+  <text x="90" y="105" class="title">手机壳候选 V2：更窄、更像系统套壳</text>
+  <text x="90" y="158" class="sub">这版参考 OPPO / 小米系统带壳截图方向：边框极窄、金属边细、打孔屏、浅色背景。</text>
+
+  <g transform="translate(90 230)">
+    <rect width="380" height="560" rx="30" fill="#fff" opacity=".72"/>
+    <text x="28" y="58" class="label">A</text><text x="82" y="52" class="name">OPPO Find 极窄银边</text><text x="82" y="86" class="note">最接近图二</text>
+    <g transform="translate(86 118) scale(.48)" style="--metal:url(#silverGreen)"><use href="#ultraThinPhone"/></g>
+  </g>
+  <g transform="translate(510 230)">
+    <rect width="380" height="560" rx="30" fill="#fff" opacity=".72"/>
+    <text x="28" y="58" class="label">B</text><text x="82" y="52" class="name">Xiaomi HyperOS 轻银边</text><text x="82" y="86" class="note">小米带壳截图方向</text>
+    <g transform="translate(86 118) scale(.48)" style="--metal:url(#xiaomiSilver)"><use href="#ultraThinPhone"/></g>
+  </g>
+  <g transform="translate(930 230)">
+    <rect width="380" height="560" rx="30" fill="#fff" opacity=".72"/>
+    <text x="28" y="58" class="label">C</text><text x="82" y="52" class="name">vivo Origin 浅青边</text><text x="82" y="86" class="note">柔和国产旗舰感</text>
+    <g transform="translate(86 118) scale(.48)" style="--metal:url(#cyanMetal)"><use href="#ultraThinPhone"/></g>
+  </g>
+  <g transform="translate(1350 230)">
+    <rect width="380" height="560" rx="30" fill="#fff" opacity=".72"/>
+    <text x="28" y="58" class="label">D</text><text x="82" y="52" class="name">Huawei Mate 青绿边</text><text x="82" y="86" class="note">商务浅绿金属边</text>
+    <g transform="translate(86 118) scale(.48)" style="--metal:#6f9183"><use href="#ultraThinPhone"/></g>
+  </g>
+  <g transform="translate(90 850)">
+    <rect width="380" height="560" rx="30" fill="#fff" opacity=".72"/>
+    <text x="28" y="58" class="label">E</text><text x="82" y="52" class="name">Honor Magic 微曲边</text><text x="82" y="86" class="note">更轻、更圆</text>
+    <g transform="translate(86 118) scale(.48)" style="--metal:#9bb8aa"><use href="#ultraThinPhone"/></g>
+  </g>
+  <g transform="translate(510 850)">
+    <rect width="380" height="560" rx="30" fill="#fff" opacity=".72"/>
+    <text x="28" y="58" class="label">F</text><text x="82" y="52" class="name">Samsung Ultra 钛灰边</text><text x="82" y="86" class="note">硬朗但不厚</text>
+    <g transform="translate(86 118) scale(.48)" style="--metal:#9d9b90"><use href="#ultraThinPhone"/></g>
+  </g>
+  <g transform="translate(930 850)">
+    <rect width="380" height="560" rx="30" fill="#fff" opacity=".72"/>
+    <text x="28" y="58" class="label">G</text><text x="82" y="52" class="name">Pixel 极简黑边</text><text x="82" y="86" class="note">细黑边，通用</text>
+    <g transform="translate(86 118) scale(.48)" style="--metal:url(#darkMetal)"><use href="#ultraThinPhone"/></g>
+  </g>
+  <g transform="translate(1350 850)">
+    <rect width="380" height="560" rx="30" fill="#fff" opacity=".72"/>
+    <text x="28" y="58" class="label">H</text><text x="82" y="52" class="name">通用透明玻璃边</text><text x="82" y="86" class="note">安全 fallback</text>
+    <g transform="translate(86 118) scale(.48)" style="--metal:#cfd8d0"><use href="#ultraThinPhone"/></g>
+  </g>
+
+  <rect x="90" y="1530" width="1640" height="650" rx="38" fill="#fff" opacity=".66"/>
+  <text x="140" y="1610" class="title">我建议这次别再做“每个品牌都一套假壳”</text>
+  <text x="140" y="1670" class="sub">先选 A/B/C/H 接入：都很窄，接近系统套壳，不会像粗黑边框。</text>
+  <text x="140" y="1730" class="sub">默认导出：3:4，浅米绿背景，手机高度约 82%，居中，柔和阴影。</text>
+  <text x="140" y="1790" class="sub">后续如果能拿到小米/OPPO 真机套壳素材，再替换成品牌精确 PNG。</text>
+</svg>
