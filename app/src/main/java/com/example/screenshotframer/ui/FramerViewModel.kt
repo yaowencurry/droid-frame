@@ -268,6 +268,23 @@ enum class ShellStyle(val title: String, val subtitle: String) {
     GlassMinimal("H 安卓钛金属边", "右侧按键，圆形打孔，极窄黑边")
 }
 
+val ShellStyle.metalGradientColors: IntArray
+    get() = intArrayOf(
+        0xFF171A19.toInt(),
+        0xFF656D69.toInt(),
+        0xFFEEF2ED.toInt(),
+        0xFF929A95.toInt(),
+        0xFF393F3C.toInt(),
+        0xFF0B0D0D.toInt(),
+        0xFF333A37.toInt(),
+        0xFFE9EEE9.toInt(),
+        0xFF5E6662.toInt(),
+        0xFF151818.toInt()
+    )
+
+val ShellStyle.metalGradientPositions: FloatArray
+    get() = floatArrayOf(0f, 0.045f, 0.08f, 0.12f, 0.20f, 0.50f, 0.80f, 0.895f, 0.945f, 1f)
+
 enum class CanvasRatio(val title: String, val widthRatio: Int, val heightRatio: Int) {
     Ratio3x4("3:4", 3, 4),
     Ratio4x5("4:5", 4, 5),

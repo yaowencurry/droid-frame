@@ -24,6 +24,8 @@ import com.example.screenshotframer.ui.CanvasRatio
 import com.example.screenshotframer.ui.FrameGeometry
 import com.example.screenshotframer.ui.FramerItem
 import com.example.screenshotframer.ui.ShellStyle
+import com.example.screenshotframer.ui.metalGradientColors
+import com.example.screenshotframer.ui.metalGradientPositions
 import java.io.File
 import java.io.FileOutputStream
 import java.time.LocalDateTime
@@ -334,20 +336,7 @@ data class ExportResult(
 )
 
 private fun ShellStyle.metalGradient(left: Float, right: Float): LinearGradient {
-    val colors = intArrayOf(
-        Color.rgb(23, 26, 25),
-        Color.rgb(101, 109, 105),
-        Color.rgb(238, 242, 237),
-        Color.rgb(146, 154, 149),
-        Color.rgb(57, 63, 60),
-        Color.rgb(11, 13, 13),
-        Color.rgb(51, 58, 55),
-        Color.rgb(233, 238, 233),
-        Color.rgb(94, 102, 98),
-        Color.rgb(21, 24, 24)
-    )
-    val positions = floatArrayOf(0f, 0.045f, 0.08f, 0.12f, 0.20f, 0.50f, 0.80f, 0.895f, 0.945f, 1f)
-    return LinearGradient(left, 0f, right, 0f, colors, positions, Shader.TileMode.CLAMP)
+    return LinearGradient(left, 0f, right, 0f, metalGradientColors, metalGradientPositions, Shader.TileMode.CLAMP)
 }
 
 private fun RectF.insetCopy(value: Float): RectF = RectF(left + value, top + value, right - value, bottom - value)

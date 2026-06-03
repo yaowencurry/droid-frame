@@ -82,6 +82,8 @@ import com.example.screenshotframer.ui.FramerViewModel
 import com.example.screenshotframer.ui.ShellStyle
 import com.example.screenshotframer.ui.UiTheme
 import com.example.screenshotframer.ui.backgroundPresets
+import com.example.screenshotframer.ui.metalGradientColors
+import com.example.screenshotframer.ui.metalGradientPositions
 import kotlin.math.roundToInt
 
 class MainActivity : ComponentActivity() {
@@ -591,17 +593,8 @@ private fun SuccessScreen(message: String, exportPath: String?, onContinue: () -
     }
 }
 
-private fun ShellStyle.previewBrush(): Brush = Brush.horizontalGradient(
-    listOf(
-        Color(0xFF171A19),
-        Color(0xFF656D69),
-        Color(0xFFEEF2ED),
-        Color(0xFF929A95),
-        Color(0xFF393F3C),
-        Color(0xFF0B0D0D),
-        Color(0xFF333A37),
-        Color(0xFFE9EEE9),
-        Color(0xFF5E6662),
-        Color(0xFF151818)
-    )
-)
+private fun ShellStyle.previewBrush(): Brush = Brush.horizontalGradient(*metalGradientColorStops())
+
+private fun ShellStyle.metalGradientColorStops(): Array<Pair<Float, Color>> =
+    metalGradientPositions.zip(metalGradientColors.toList()) { position, color -> position to Color(color) }
+        .toTypedArray()

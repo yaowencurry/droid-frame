@@ -12,15 +12,24 @@ android {
         applicationId = "com.example.screenshotframer"
         minSdk = 26
         targetSdk = 35
-        versionCode = 5
-        versionName = "0.3.2-installable-release"
+        versionCode = 9
+        versionName = "0.3.6-zero-margin"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
+    signingConfigs {
+        create("testRelease") {
+            storeFile = file("signing/droidframe-test-release.jks")
+            storePassword = "droidframe-test"
+            keyAlias = "droidframe-test-release"
+            keyPassword = "droidframe-test"
+        }
+    }
+
     buildTypes {
         release {
-            signingConfig = signingConfigs.getByName("debug")
+            signingConfig = signingConfigs.getByName("testRelease")
         }
     }
 

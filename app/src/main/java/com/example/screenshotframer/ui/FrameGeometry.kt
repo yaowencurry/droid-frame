@@ -3,7 +3,7 @@ package com.example.screenshotframer.ui
 object FrameGeometry {
     const val PhoneAspectRatio = 9f / 19.5f
     const val DefaultVerticalMarginFraction = 0.10f
-    const val MinVerticalMarginFraction = 0.06f
+    const val MinVerticalMarginFraction = 0f
     const val MaxVerticalMarginFraction = 0.22f
     const val OuterCornerRadiusFraction = 0.144f
     const val ScreenCornerRadiusFraction = 0.118f

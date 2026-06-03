@@ -11,13 +11,14 @@ class FrameGeometryTest {
 
     @Test
     fun verticalMarginUsesSymmetricSliderValue() {
+        assertThat(FrameGeometry.phoneHeightFraction(CanvasRatio.Ratio3x4, 0f)).isWithin(0.001f).of(0.86f)
         assertThat(FrameGeometry.phoneHeightFraction(CanvasRatio.Ratio3x4, 0.10f)).isWithin(0.001f).of(0.80f)
         assertThat(FrameGeometry.phoneHeightFraction(CanvasRatio.Ratio3x4, 0.18f)).isWithin(0.001f).of(0.64f)
     }
 
     @Test
     fun verticalMarginIsClampedToUsableRange() {
-        assertThat(FrameGeometry.normalizedVerticalMargin(-1f)).isEqualTo(FrameGeometry.MinVerticalMarginFraction)
+        assertThat(FrameGeometry.normalizedVerticalMargin(-1f)).isEqualTo(0f)
         assertThat(FrameGeometry.normalizedVerticalMargin(1f)).isEqualTo(FrameGeometry.MaxVerticalMarginFraction)
     }
 
