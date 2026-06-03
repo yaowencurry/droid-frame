@@ -32,13 +32,20 @@ jobs:
       - name: Verify release APK
         run: test -f app/build/outputs/apk/release/app-release.apk
 
+      - name: Prepare release asset
+        env:
+          TAG_NAME: ${{ github.ref_name }}
+        run: |
+          mkdir -p dist
+          cp app/build/outputs/apk/release/app-release.apk "dist/DroidFrame-${TAG_NAME}.apk"
+
       - name: Create GitHub Release
         env:
           GH_TOKEN: ${{ github.token }}
           TAG_NAME: ${{ github.ref_name }}
         run: |
           gh release create "$TAG_NAME" \
-            app/build/outputs/apk/release/app-release.apk#DroidFrame-${TAG_NAME}.apk \
+            "dist/DroidFrame-${TAG_NAME}.apk" \
             --title "DroidFrame ${TAG_NAME}" \
             --generate-notes \
             --verify-tag
