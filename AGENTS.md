@@ -30,6 +30,24 @@ This is the preferred one-shot command because it verifies unit tests and produc
   `app/build/outputs/apk/release/app-release.apk`
 - Do not send or install `app-release-unsigned.apk`. Unsigned APKs are build intermediates and may show as an invalid install package.
 
+## Local APK Packaging
+- Use the required verification command above when handing off a build. It runs tests and produces both debug and release APKs.
+- If only the installable release APK is needed after tests have already passed in the same turn, run:
+
+```bash
+JAVA_HOME=/opt/homebrew/opt/openjdk@17/libexec/openjdk.jdk/Contents/Home \
+PATH="/opt/homebrew/opt/openjdk@17/libexec/openjdk.jdk/Contents/Home/bin:$PATH" \
+./gradlew :app:assembleRelease
+```
+
+- Confirm the package exists before sharing it:
+
+```bash
+test -f app/build/outputs/apk/release/app-release.apk
+```
+
+- Keep `build/`, `.gradle/`, and generated APKs out of Git. Do not commit build outputs.
+
 ## Release Signing
 - The release build is intentionally signed with the local debug keystore so it can be installed directly for testing.
 - This is not a Play Store or production distribution signature.
@@ -42,6 +60,24 @@ This is the preferred one-shot command because it verifies unit tests and produc
 - Android will reject updating an installed app if the signing certificate changes. Current debug and release builds use the debug keystore to avoid signature mismatch during local testing.
 - If switching from an older package signed with a different key, uninstall the old app first or keep using the same signing key.
 - Before handing an APK to the user, confirm that the release output is `app-release.apk`, not `app-release-unsigned.apk`.
+
+## GitHub Release APK Publishing
+- Publish downloadable APKs through GitHub Releases, not by committing `build/`.
+- The workflow at `.github/workflows/release.yml` runs on `v*` tags. It tests the project, builds `:app:assembleRelease`, copies the APK to `dist/DroidFrame-<tag>.apk`, creates a GitHub Release, and uploads the APK as a release asset.
+- Standard release flow:
+
+```bash
+git status --short --branch
+git tag v0.3.3
+git push origin v0.3.3
+```
+
+- Use a new tag for each release. Do not reuse an existing tag unless explicitly repairing a failed release.
+- After pushing the tag, check the GitHub Actions run and the Release page:
+  `https://github.com/yaowencurry/droid-frame/actions`
+  `https://github.com/yaowencurry/droid-frame/releases`
+- Future release assets should be named like `DroidFrame-v0.3.3.apk`.
+- The existing `v0.3.2` release was created before the asset rename fix, so its downloadable asset is named `app-release.apk`.
 
 ## Notes For Future Agents
 - Do not say the app is verified unless the command above has completed successfully in the current turn.
